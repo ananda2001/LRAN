@@ -6,7 +6,7 @@ LRAN learns an embedding of a nonlinear control system's state space in which th
 z_{k+1} = A z_k + B u_k
 ```
 
-A neural encoder maps states `x` to a latent vector `z`; a decoder maps back to original state space. The matrices `A` and `B` are learned jointly with the networks. This makes the latent space amenable to linear control methods (LQR, MPC, etc.).
+This is based on Koopman operator theory. A neural encoder maps states `x` to a latent vector `z`; a decoder maps back to original state space. The matrices `A` and `B` are learned jointly with the networks. This makes the latent space amenable to linear control methods (LQR, MPC, etc.).
 
 ---
 
