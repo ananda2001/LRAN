@@ -23,16 +23,16 @@ A neural encoder maps states `x` to a latent vector `z`; a decoder maps back to 
 
 ---
 
-## Bringing Your Own Data
+## Dataset
 
-Your data should be a `.mat` file with two variables:
+The data should be a `.mat` file with two variables:
 
 - **`X`**: state snapshots, shape `(n_traj, T, n_x)` or `(T, n_x)` for a single trajectory
 - **`U`**: control inputs, shape `(n_traj, T-1, n_u)` or `(T-1, n_u)`
 
 `T` is the number of state snapshots per trajectory; there are `T-1` control steps between them. LRAN normalizes all features to `[-1, 1]` internally for easier training (can be disabled).
 
-If the`.mat` file uses different variable names, pass `--x_key` and `--u_key`.
+If the`.mat` file uses different variable names, pass `--x_key` and `--u_key`. This codebase is currently timplemented on a toy problem, i.e., a simple pendulum with control.
 
 ---
 
