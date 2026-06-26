@@ -38,7 +38,7 @@ If the`.mat` file uses different variable names, pass `--x_key` and `--u_key`. T
 
 ## Quick Start
 
-**Built-in pendulum (for testing):**
+**Pendulum (current setup)**
 ```bash
 python driver.py --dataset pendulum --epochs 500 --n_z 8
 ```
