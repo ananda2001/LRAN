@@ -51,19 +51,19 @@ python driver.py --dataset /path/to/data.mat --x_key X --u_key U \
 
 Key arguments:
 
-| Argument and Description |
-|---|
-| `--n_z` Latent (Koopman) dimension |
-| `--alpha` Width multiplier (hidden layer width = 16 * alpha) |
-| `--steps` Multi-step prediction horizon during training |
-| `--epochs` Training epochs |
-| `--lr` Learning rate |
-| `--gamma_id` Weight on reconstruction loss |
-| `--gamma_fwd` Weight on decoded forward-prediction loss |
-| `--gamma_lin` Weight on latent linearity loss |
-| `--gamma_eig` Weight on eigenvalue stability penalty (0 = off) |
-| `--out_dir` Directory to save `model.pt` and `metrics.mat` |
-| `--no_plot` Suppress figures (use on HPC) |
+| Argument | Description |
+|---|---|
+| `--n_z` | Latent (Koopman) dimension |
+| `--alpha` |  Width multiplier (hidden layer width = 16 * alpha) |
+| `--steps` | Multi-step prediction horizon during training |
+| `--epochs` | Training epochs |
+| `--lr` | Learning rate |
+| `--gamma_id` | Weight on reconstruction loss |
+| `--gamma_fwd` | Weight on decoded forward-prediction loss |
+| `--gamma_lin` | Weight on latent linearity loss |
+| `--gamma_eig` | Weight on eigenvalue stability penalty (0 = off) |
+| `--out_dir` | Directory to save `model.pt` and `metrics.mat` |
+| `--no_plot` | Suppress figures (use on HPC) |
 
 ---
 
