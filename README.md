@@ -43,7 +43,7 @@ If the`.mat` file uses different variable names, pass `--x_key` and `--u_key`. T
 python driver.py --dataset pendulum --epochs 500 --n_z 8
 ```
 
-**Your own dataset:**
+**Custom dataset:**
 ```bash
 python driver.py --dataset /path/to/data.mat --x_key X --u_key U \
     --n_z 16 --alpha 4 --steps 8 --epochs 500 --out_dir results/run1
